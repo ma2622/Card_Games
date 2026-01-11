@@ -39,9 +39,13 @@ class Rank(Enum):
     KING = (13, 'K')
     ACE = (14, 'A')
     
-    def __init__(self, value, display):
-        self.value = value
-        self.display = display
+    @property
+    def numeric_value(self):
+        return self.value[0]
+    
+    @property
+    def display(self):
+        return self.value[1]
 
 
 @dataclass
@@ -58,7 +62,7 @@ class Card:
     def get_value(self):
         if self.is_joker:
             return 15
-        return self.rank.value
+        return self.rank.numeric_value
     
     def is_red(self):
         if self.is_joker:
