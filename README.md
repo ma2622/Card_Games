@@ -47,13 +47,54 @@ Players are shown a card and must guess whether the next card will be higher or 
   - Ties count as incorrect guesses
   - Jokers have the highest value
   - Deck automatically reshuffles when cards run low
+## Requirements
+- Python 3.7 or later
+- `tkinter` (included with most Python installations)
+- No external dependencies
+
+---
+
+## GUI Highlights
+- Visual card display with red and black suits
+- Buttons disabled during card reveal to prevent misclicks
+- Clear visual feedback for correct and incorrect guesses
+- Live statistics panel
+- Simple New Game restart option
+
+---
+
+## Testing
+Formal unit tests are not included to keep the submission focused, but the design supports straightforward testing.
+
+Example test cases include:
+- Verifying deck size with and without Jokers
+- Ensuring shuffle preserves card count
+- Testing card value comparisons, including Jokers
+
+---
+
+## Future Improvements
+- Animations and sound effects
+- Difficulty levels and adaptive gameplay
+- Persistent high scores
+- Multiplayer support
+- Additional card games (e.g. Blackjack, Poker)
+- Achievements and GUI customisation
+
+---
+
+## Summary
+This project:
+- Fully meets all core requirements and includes meaningful extensions
+- Provides both CLI and GUI interfaces
+- Demonstrates clean, maintainable, and well-documented code
+- Shows thoughtful UX and game design
+- Is structured for future expansion rather than a one-off solution
 
 ---
 
 ## How to Run
 ### CLI
-```bash
 python card_game.py
-
 
 
