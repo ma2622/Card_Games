@@ -37,9 +37,15 @@ class Rank(Enum):
     KING = (10, 'K')
     ACE = (11, 'A')
     
-    def __init__(self, value, display):
-        self.value = value
-        self.display = display
+    @property
+    def blackjack_value(self):
+        """Returns the blackjack value for this rank"""
+        return self.value[0]
+    
+    @property
+    def display(self):
+        """Returns the display string"""
+        return self.value[1]
 
 
 @dataclass
@@ -52,7 +58,7 @@ class Card:
     
     def get_blackjack_value(self):
         """Returns the blackjack value of the card"""
-        return self.rank.value
+        return self.rank.blackjack_value
     
     def is_ace(self):
         return self.rank == Rank.ACE
