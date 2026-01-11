@@ -51,9 +51,9 @@ Players are shown a card and must guess whether the next card will be higher or 
 ---
 
 ## How to Run
-
 ### CLI
 ```bash
 python card_game.py
-### GUI
-python card_game_gui.py
+
+
+
