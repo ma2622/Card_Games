@@ -1,5 +1,7 @@
 """
 Card Game - Higher/Lower with Multiple Game Modes
+Author: Manha
+Created for: Hawk-Eye Innovations Graduate Scheme
 
 This application implements a flexible card game system with:
 - Standard 52-card deck with optional Jokers
@@ -23,7 +25,7 @@ class Suit(Enum):
 
 
 class Rank(Enum):
-    """Card ranks with their values"""
+    """Card ranks with their numeric values and display strings"""
     TWO = (2, '2')
     THREE = (3, '3')
     FOUR = (4, '4')
@@ -38,9 +40,15 @@ class Rank(Enum):
     KING = (13, 'K')
     ACE = (14, 'A')
     
-    def __init__(self, value, display):
-        self.value = value
-        self.display = display
+    @property
+    def numeric_value(self):
+        """Returns the numeric value for comparison"""
+        return self.value[0]
+    
+    @property
+    def display(self):
+        """Returns the display string"""
+        return self.value[1]
 
 
 @dataclass
@@ -59,7 +67,7 @@ class Card:
         """Returns the numerical value of the card"""
         if self.is_joker:
             return 15  # Jokers are highest
-        return self.rank.value
+        return self.rank.numeric_value
 
 
 class Deck:
@@ -125,7 +133,7 @@ class HigherLowerGame:
         self.current_card = self.deck.draw()
         self.games_played += 1
     
-    def make_guess(self, guess_higher: bool) -> tuple[bool, Card, str]:
+    def make_guess(self, guess_higher: bool) -> tuple:
         """
         Makes a guess and returns result
         Returns: (is_correct, next_card, result_message)
