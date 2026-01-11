@@ -1,8 +1,5 @@
 """
 Card Game - Higher/Lower with Multiple Game Modes
-Author: Manha
-Created for: Hawk-Eye Innovations Graduate Scheme
-
 This application implements a flexible card game system with:
 - Standard 52-card deck with optional Jokers
 - Multiple game modes (Higher/Lower, Blackjack Lite)
