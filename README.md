@@ -162,4 +162,3 @@ Thoughtful design decisions
 
 Focus on user experience
 
-Thank you for taking the time to review my submission — I’d love the opportunity to bring this approach to Hawk-Eye Innovations.
