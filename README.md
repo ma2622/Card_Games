@@ -1,6 +1,4 @@
-Author: Manha
-
-Overview
+🃏 Overview
 
 This project is a Higher/Lower card game built in Python, available in both Command Line (CLI) and Graphical (GUI) versions.
 
@@ -10,7 +8,7 @@ The game keeps track of your score, streaks, and accuracy as you play.
 
 I’ve focused on writing clean, readable code and building something that’s fun, extensible, and easy to understand.
 
-What’s Included
+✅ What’s Included
 Core Features
 
 Standard 52-card deck (using Suits and Ranks)
@@ -39,7 +37,7 @@ Accuracy %
 
 Cards remaining
 
-Design Choices (Briefly Explained)
+🧠 Design Choices (Briefly Explained)
 Object-Oriented Design
 
 The code is split into clear, logical parts:
@@ -76,7 +74,7 @@ Jokers have the highest value to make them special
 
 The deck automatically reshuffles when cards run low
 
-How to Run
+▶️ How to Run
 CLI Version
 python card_game.py
 
@@ -91,7 +89,7 @@ tkinter (usually included with Python)
 
 No external libraries
 
-GUI Highlights
+🎨 GUI Highlights
 
 Visual card display with red/black suits
 
@@ -119,7 +117,7 @@ Shuffle preserving card count
 
 Card value comparisons (including Jokers)
 
-Possible Improvements
+🚀 Possible Improvements
 Short-Term
 
 Card reveal animations
@@ -140,7 +138,7 @@ Achievements and progression system
 
 GUI themes and customisation
 
-Why This Stands Out
+💡 Why This Stands Out
 
 Fully meets all requirements, plus extensions
 
@@ -152,7 +150,7 @@ Thoughtful UX and gameplay decisions
 
 Designed to be extended, not just “finished”
 
-Final Note
+📝 Final Note
 
 This project reflects how I approach development:
 
