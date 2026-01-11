@@ -96,5 +96,9 @@ This project:
 ## How to Run
 ### CLI
 python card_game.py
+### GUI
+python card_game_gui.py
+### Alternative game
+blackjack_lite.py
 
 
